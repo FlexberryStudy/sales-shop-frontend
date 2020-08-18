@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Sales shop",
+  "applicationTitle": "Sales shop",
+  "items": [
+    {
+      "link": null,
+      "menuName": "sales-shop",
+      "caption": "SalesShop",
+      "title": "SalesShop",
+      "children": [
+        {
+          "link": "i-i-s-sales-shop-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-sales-shop-продажа-l",
+          "menuName": null,
+          "caption": "Продажа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-sales-shop-магазин-l",
+          "menuName": null,
+          "caption": "Магазин",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

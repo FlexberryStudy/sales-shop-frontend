@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-sales-shop-продажа-e",
+  "editForm": "i-i-s-sales-shop-продажа-e",
+  "external": false,
+  "caption": "Продажа",
+  "name": "IISSalesShopПродажаL",
+  "className": "ПродажаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sales-shop-продажа",
+      "modelProjection": "ПродажаL"
+    }
+  ]
+}

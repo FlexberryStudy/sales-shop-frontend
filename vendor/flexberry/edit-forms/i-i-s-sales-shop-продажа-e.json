@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Магазин",
+      "projection": "МагазинL",
+      "detailModelName": null
+    },
+    {
+      "master": "товар",
+      "displayAttributeName": "название",
+      "required": true,
+      "relationName": "СтрокаПродажи.Товар",
+      "projection": "ТоварL",
+      "detailModelName": "i-i-s-sales-shop-строка-продажи"
+    }
+  ],
+  "external": false,
+  "caption": "Продажа",
+  "name": "IISSalesShopПродажаE",
+  "className": "ПродажаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sales-shop-продажа",
+      "modelProjection": "ПродажаE"
+    }
+  ]
+}

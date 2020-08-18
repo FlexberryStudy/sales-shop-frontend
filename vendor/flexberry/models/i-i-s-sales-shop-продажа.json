@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISSalesShopПродажа",
+  "modelName": "i-i-s-sales-shop-продажа",
+  "className": "Продажа",
+  "nameSpace": "IIS.SalesShop",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "магазин",
+      "relatedTo": "i-i-s-sales-shop-магазин",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "строкаПродажи",
+      "relatedTo": "i-i-s-sales-shop-строка-продажи",
+      "inverse": "продажа"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПродажаE",
+      "modelName": "i-i-s-sales-shop-продажа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Магазин",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Магазин",
+          "name": "магазин",
+          "relatedTo": "i-i-s-sales-shop-магазин",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СтрокаПродажиE",
+          "caption": "Строка продажи",
+          "name": "строкаПродажи",
+          "relatedTo": "i-i-s-sales-shop-строка-продажи",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПродажаL",
+      "modelName": "i-i-s-sales-shop-продажа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Магазин",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "магазин",
+          "relatedTo": "i-i-s-sales-shop-магазин",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

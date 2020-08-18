@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-sales-shop-товар-e",
+  "editForm": "i-i-s-sales-shop-товар-e",
+  "external": false,
+  "caption": "Товар",
+  "name": "IISSalesShopТоварL",
+  "className": "ТоварL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sales-shop-товар",
+      "modelProjection": "ТоварL"
+    }
+  ]
+}
